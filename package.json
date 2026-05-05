@@ -1,0 +1,16 @@
+{
+  "name": "flexcity",
+  "version": "1.0.0",
+  "description": "Eine professionelle, moderne Webseite für das Diplomarbeitsprojekt **FLEXCITY** von Jakob Nigsch und Nicolai Ruetz.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "pdf-image": "^2.0.0"
+  }
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlexCity – Modulares, flexibles Wohnsystem für junge Erwachsene. Diplomarbeit von Jakob Nigsch & Nicolai Ruetz, HTBLuVA Imst 2026.">
+    <meta name="author" content="Jakob Nigsch & Nicolai Ruetz">
+    <title>FLEXCITY — Flexibles Wohnsystem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">
+                <svg class="logo-svg" width="34" height="40" viewBox="0 0 34 40" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="32" height="38" stroke="#C8A800" stroke-width="1.5"/>
+                    <line x1="9"  y1="8"  x2="9"  y2="32" stroke="#C8A800" stroke-width="2.5"/>
+                    <line x1="9"  y1="8"  x2="27" y2="8"  stroke="#C8A800" stroke-width="2.5"/>
+                    <line x1="9"  y1="20" x2="21" y2="20" stroke="#C8A800" stroke-width="2.5"/>
+                </svg>
+                <span class="nav__logo-text">FLEXCITY</span>
+            </a>
+
+            <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav__links" id="navLinks" role="list">
+                <li><a href="#konzept">Konzept</a></li>
+                <li><a href="#module">Module</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#innenraum">Innenraum</a></li>
+                <li><a href="#materialien">Materialien</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section id="hero" class="hero">
+        <div class="hero__bg">
+            <img src="Renderings/Aussen.png" alt="FlexCity Außenansicht bei Dämmerung" class="hero__img">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__accent-v" aria-hidden="true"></div>
+        <div class="hero__accent-h" aria-hidden="true"></div>
+
+        <div class="hero__content">
+<h1 class="hero__title">
+                <span class="hero__title-main">FLEXCITY</span>
+                <span class="hero__title-sub">Flexibles Wohnsystem</span>
+            </h1>
+            <p class="hero__desc">
+                Modulare, leistbare und nachhaltige Wohnlösungen<br>
+                für junge Erwachsene zwischen 18 und 30 Jahren.
+            </p>
+            <div class="hero__actions">
+                <a href="#konzept" class="btn btn--primary">Konzept entdecken</a>
+                <a href="#galerie" class="btn btn--ghost">Galerie ansehen</a>
+            </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scrollen</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         KONZEPT
+    ═══════════════════════════════════════ -->
+    <section id="konzept" class="konzept">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">01 — Konzept</span>
+                <h2 class="section-title">Das Problem.<br>Die Lösung.</h2>
+            </div>
+
+            <div class="konzept__grid">
+                <div class="konzept__card konzept__card--dark reveal">
+                    <div class="konzept__card-nr">Problem</div>
+                    <blockquote class="konzept__quote">
+                        „Kurzfristigen Wohnraum zu finden ist für junge Erwachsene kaum noch möglich. Wohnraummangel, geringe Vermieterflexibilität und hohe Kosten erschweren den Zugang."
+                    </blockquote>
+                    <p class="konzept__text">
+                        Es fehlt an unverbindlichen, schnell umsetzbaren und anpassbaren Lösungen für Menschen in Lebensphasen der Veränderung — Berufseinstieg, Studium, Ausbildung.
+                    </p>
+                </div>
+
+                <div class="konzept__card konzept__card--light reveal reveal-delay-1">
+                    <div class="konzept__card-nr">Lösung</div>
+                    <h3 class="konzept__card-title">Modulares Trapez-System</h3>
+                    <p class="konzept__text konzept__text--dark">
+                        FlexCity entwickelt ein modulares Wohnkonzept auf Basis vorgefertigter Trapez-Einheiten. Gemeinden errichten Module bedarfsgerecht und vermieten sie preiswert an junge Erwachsene.
+                    </p>
+                    <ul class="konzept__list">
+                        <li>Industrielle Vorfertigung</li>
+                        <li>Flexible Anordnung &amp; Erweiterung</li>
+                        <li>Vollständig rückbaubar</li>
+                        <li>Vorinstallierte Haustechnik</li>
+                        <li>Nachhaltige Materialien</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         STATS
+    ═══════════════════════════════════════ -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stats__item reveal">
+                    <div class="stats__number">16 m²</div>
+                    <div class="stats__label">Einzelmodul</div>
+                </div>
+                <div class="stats__item reveal reveal-delay-1">
+                    <div class="stats__number">9 × 10 m</div>
+                    <div class="stats__label">Trapez-Grundfläche</div>
+                </div>
+                <div class="stats__item reveal reveal-delay-2">
+                    <div class="stats__number">3,8 m²</div>
+                    <div class="stats__label">Badbereich</div>
+                </div>
+                <div class="stats__item reveal reveal-delay-3">
+                    <div class="stats__number">18 – 30</div>
+                    <div class="stats__label">Jahre Zielgruppe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         MODULE
+    ═══════════════════════════════════════ -->
+    <section id="module" class="module">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">02 — Module</span>
+                <h2 class="section-title">Modularten &amp;<br>Anordnung</h2>
+            </div>
+
+            <div class="module__overview">
+                <div class="module__img-wrap reveal">
+                    <img src="Renderings/Ansicht.png" alt="Vogelperspektive — Fächerartige Modulanordnung" loading="lazy">
+                    <div class="module__img-caption">Vogelperspektive — Fächerartige Modulanordnung</div>
+                </div>
+
+                <div class="module__types">
+                    <div class="module__type reveal">
+                        <div class="module__type-nr">01</div>
+                        <div class="module__type-info">
+                            <h4>Grundmodul ohne Treppe</h4>
+                            <p>Basiseinheit als eigenständige Wohneinheit auf Erdgeschossebene mit 16 m² Wohnfläche.</p>
+                        </div>
+                    </div>
+                    <div class="module__type reveal reveal-delay-1">
+                        <div class="module__type-nr">02</div>
+                        <div class="module__type-info">
+                            <h4>Grundmodul mit Treppe</h4>
+                            <p>Erschließung von Obergeschossen bei vertikaler und gestapelter Modulanordnung.</p>
+                        </div>
+                    </div>
+                    <div class="module__type reveal reveal-delay-2">
+                        <div class="module__type-nr">03</div>
+                        <div class="module__type-info">
+                            <h4>Erweiterungsmodul</h4>
+                            <p>Mit oder ohne Zwischenwand — flexible Raumaufteilung für individuelle Wohnbedürfnisse.</p>
+                        </div>
+                    </div>
+                    <div class="module__type reveal reveal-delay-3">
+                        <div class="module__type-nr">04</div>
+                        <div class="module__type-info">
+                            <h4>Terrassenmodul</h4>
+                            <p>Außenbereich verblendet oder offen — erweitert den Wohnraum natürlich nach außen.</p>
+                        </div>
+                    </div>
+                    <div class="module__type reveal">
+                        <div class="module__type-nr">05</div>
+                        <div class="module__type-info">
+                            <h4>Modulhälften</h4>
+                            <p>Kleinere Teileinheiten für besonders kompakte und kosteneffiziente Wohnlösungen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         GALERIE
+    ═══════════════════════════════════════ -->
+    <section id="galerie" class="galerie">
+        <div class="container">
+            <div class="section-header section-header--light reveal">
+                <span class="section-label">03 — Visualisierungen</span>
+                <h2 class="section-title section-title--light">Galerie</h2>
+            </div>
+        </div>
+
+        <div class="galerie__grid">
+            <!-- Row 1: wide + 1 -->
+            <div class="galerie__item galerie__item--wide">
+                <img src="Renderings/Aussen_Terasse.png" alt="Außenansicht mit Terrasse" loading="lazy">
+                <div class="galerie__caption">Außenansicht mit Terrasse</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Aussen.png" alt="Außenansicht Mehrfachmodul" loading="lazy">
+                <div class="galerie__caption">Mehrfachmodul — Abenddämmerung</div>
+            </div>
+
+            <!-- Row 2: 3 equal -->
+            <div class="galerie__item">
+                <img src="Renderings/Innenansicht.png" alt="Innenansicht mit Lamellenverkleidung" loading="lazy">
+                <div class="galerie__caption">Innenansicht — Lamellenverkleidung</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Küche.png" alt="Küchenbereich" loading="lazy">
+                <div class="galerie__caption">Küchenbereich</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Schlafzimmer.png" alt="Schlafzimmer" loading="lazy">
+                <div class="galerie__caption">Schlafzimmer</div>
+            </div>
+
+            <!-- Row 3: 1 + wide -->
+            <div class="galerie__item">
+                <img src="Renderings/Blick nach aussen.png" alt="Blick nach außen" loading="lazy">
+                <div class="galerie__caption">Blick nach außen</div>
+            </div>
+            <div class="galerie__item galerie__item--wide">
+                <img src="Renderings/Ansicht.png" alt="Grundriss Vogelperspektive" loading="lazy">
+                <div class="galerie__caption">Grundriss — Vogelperspektive</div>
+            </div>
+
+            <!-- Row 4: 3 equal -->
+            <div class="galerie__item">
+                <img src="Renderings/Arbeitsplatz.png" alt="Arbeitsplatz" loading="lazy">
+                <div class="galerie__caption">Arbeitsplatz</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Arbeitsplatz2.png" alt="Arbeitsplatz Detail" loading="lazy">
+                <div class="galerie__caption">Arbeitsplatz — Detail</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/TV-Möbel.png" alt="TV-Möbel" loading="lazy">
+                <div class="galerie__caption">TV-Möbel</div>
+            </div>
+
+            <!-- Row 5: 3 equal -->
+            <div class="galerie__item">
+                <img src="Renderings/Kasten.png" alt="Schranksystem" loading="lazy">
+                <div class="galerie__caption">Schranksystem</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Wand Tisch.png" alt="Wandtisch Klappmechanismus" loading="lazy">
+                <div class="galerie__caption">Wandtisch — Klappmechanismus</div>
+            </div>
+            <div class="galerie__item">
+                <img src="Renderings/Arbeitsplatte.png" alt="Arbeitsplatte Detail" loading="lazy">
+                <div class="galerie__caption">Arbeitsplatte — Detail</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         INNENRAUM
+    ═══════════════════════════════════════ -->
+    <section id="innenraum" class="innenraum">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">04 — Innenraum</span>
+                <h2 class="section-title">Möbelsystem &amp;<br>Innenraumkonzept</h2>
+            </div>
+
+            <div class="innenraum__split">
+                <div class="innenraum__text">
+                    <div class="innenraum__feature reveal">
+                        <h3>Wandgestaltung</h3>
+                        <p>OSB-Platten mit schwarzem Wollfilz bespannt, darauf Fichtenholzlatten in vertikaler Lamellenoptik — vereint Raumakustik mit warmer Materialästhetik.</p>
+                    </div>
+                    <div class="innenraum__feature reveal reveal-delay-1">
+                        <h3>Modulares Möbelprogramm</h3>
+                        <p>Alle Korpusse sind auf ein einheitliches Schienensystem abgestimmt: offene Regale, Schränke mit Dreh- oder Schiebetür, Aufhängestangen und Wandhaken — frei kombinierbar und erweiterbar.</p>
+                    </div>
+                    <div class="innenraum__feature reveal reveal-delay-2">
+                        <h3>Multifunktionaler Klapptisch</h3>
+                        <p>Platzsparende Lösung als Esstisch, Schreibtisch oder Ablagefläche — bei Bedarf vollständig weggeklappt und verstaut.</p>
+                    </div>
+                    <div class="innenraum__feature reveal reveal-delay-3">
+                        <h3>Flexibles Bettkonzept</h3>
+                        <p>Umfunktionierbar zwischen Einzel- und Doppelbett-Modus — maximale Raumnutzung auf minimalster Grundfläche durch integrierte Stauraum-Unterzone.</p>
+                    </div>
+                    <div class="innenraum__feature reveal">
+                        <h3>Bodenbeläge</h3>
+                        <p>Wohnbereich: Parkett in Eschen- oder Fichtenholz. Badbereich: Fliesen. Beide Materialien fügen sich harmonisch in die Holz-Schwarz-Palette des Gesamtkonzepts ein.</p>
+                    </div>
+                </div>
+
+                <div class="innenraum__images reveal">
+                    <div class="innenraum__img-main">
+                        <img src="Renderings/Innenansicht.png" alt="Innenansicht mit Lamellenverkleidung und Möbelsystem" loading="lazy">
+                    </div>
+                    <div class="innenraum__img-row">
+                        <img src="Renderings/Wandaufbau.png" alt="Wandaufbau" loading="lazy">
+                        <img src="Renderings/Blick nach aussen.png" alt="Blick nach außen" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         MATERIALIEN
+    ═══════════════════════════════════════ -->
+    <section id="materialien" class="materialien">
+        <div class="container">
+            <div class="section-header section-header--light reveal">
+                <span class="section-label">05 — Materialien</span>
+                <h2 class="section-title section-title--light">Nachhaltige<br>Materialien</h2>
+            </div>
+
+            <div class="materialien__grid">
+                <div class="materialien__card reveal">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="4" y="6" width="32" height="28" rx="1" stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="4" y1="16" x2="36" y2="16" stroke="#C8A800" stroke-width="1"/>
+                            <line x1="4" y1="24" x2="36" y2="24" stroke="#C8A800" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h4>MDF schwarz</h4>
+                    <p>Möbelkorpusse &amp; Wandelemente</p>
+                    <small>Robust, fein bearbeitbar, gleichmäßige Oberfläche</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-1">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <line x1="8"  y1="34" x2="8"  y2="6"  stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="15" y1="34" x2="15" y2="8"  stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="22" y1="34" x2="22" y2="6"  stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="29" y1="34" x2="29" y2="9"  stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="5"  y1="34" x2="35" y2="34" stroke="#C8A800" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4>Fichtenholz</h4>
+                    <p>Wandlatten &amp; Tragstruktur</p>
+                    <small>Leicht, günstig, nachhaltig gewonnen</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-2">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="5" y="20" width="30" height="14" stroke="#C8A800" stroke-width="1.5"/>
+                            <path d="M10 20 L10 14 M20 20 L20 10 M30 20 L30 14" stroke="#C8A800" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4>Eschenholz</h4>
+                    <p>Parkett-Option Wohnbereich</p>
+                    <small>Hart, langlebig, edle Holzoptik</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-3">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <path d="M8 30 Q10 8 20 10 Q30 8 32 30 Z" stroke="#C8A800" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M14 24 Q20 14 26 24" stroke="#C8A800" stroke-width="1" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Wollfilz (schwarz)</h4>
+                    <p>Wandverkleidung</p>
+                    <small>Akustikoptimierung, nachhaltig</small>
+                </div>
+
+                <div class="materialien__card reveal">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="4" y="4" width="32" height="32" stroke="#C8A800" stroke-width="1.5"/>
+                            <line x1="4" y1="15" x2="36" y2="15" stroke="#C8A800" stroke-width="0.8"/>
+                            <line x1="4" y1="25" x2="36" y2="25" stroke="#C8A800" stroke-width="0.8"/>
+                            <line x1="15" y1="4" x2="15" y2="36" stroke="#C8A800" stroke-width="0.8"/>
+                            <line x1="25" y1="4" x2="25" y2="36" stroke="#C8A800" stroke-width="0.8"/>
+                        </svg>
+                    </div>
+                    <h4>OSB-Platten</h4>
+                    <p>Innenwand-Unterkonstruktion</p>
+                    <small>Stabil, kostengünstig</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-1">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <polygon points="20,4 36,36 4,36" stroke="#C8A800" stroke-width="1.5" stroke-linejoin="round"/>
+                            <line x1="20" y1="16" x2="20" y2="36" stroke="#C8A800" stroke-width="0.8"/>
+                            <line x1="12" y1="28" x2="28" y2="28" stroke="#C8A800" stroke-width="0.8"/>
+                        </svg>
+                    </div>
+                    <h4>BSP (Brettsperrholz)</h4>
+                    <p>Dachkonstruktion</p>
+                    <small>Hohe Stabilität, Holzbau-typisch</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-2">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="6" y="14" width="28" height="20" rx="2" stroke="#C8A800" stroke-width="1.5"/>
+                            <path d="M12 14 L12 9 M20 14 L20 6 M28 14 L28 9" stroke="#C8A800" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4>Fliesen</h4>
+                    <p>Badbereich</p>
+                    <small>Langlebig, hygienisch, pflegeleicht</small>
+                </div>
+
+                <div class="materialien__card reveal reveal-delay-3">
+                    <div class="materialien__icon">
+                        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <circle cx="20" cy="20" r="14" stroke="#C8A800" stroke-width="1.5"/>
+                            <path d="M13 20 Q20 10 27 20 Q20 30 13 20Z" stroke="#C8A800" stroke-width="1"/>
+                            <circle cx="20" cy="20" r="3" stroke="#C8A800" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h4>Compact P AIR9</h4>
+                    <p>Heizung &amp; Kühlung</p>
+                    <small>Vorinstallierte Haustechnik</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TEAM
+    ═══════════════════════════════════════ -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">06 — Team</span>
+                <h2 class="section-title">Die Autoren</h2>
+            </div>
+
+            <div class="team__grid">
+                <div class="team__card reveal">
+                    <div class="team__initials">JN</div>
+                    <div class="team__info">
+                        <h3>Jakob Nigsch</h3>
+                        <p class="team__role">Konzept &amp; Architektur</p>
+                        <div class="team__contacts">
+                            <a href="mailto:nigschjakob777@gmail.com" class="team__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7 L12 14 L22 7" stroke="currentColor" stroke-width="1.5"/></svg>
+                                nigschjakob777@gmail.com
+                            </a>
+                            <a href="https://instagram.com/jakob_nigsch" class="team__link" target="_blank" rel="noopener noreferrer">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                                @jakob_nigsch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team__card reveal reveal-delay-1">
+                    <div class="team__initials">NR</div>
+                    <div class="team__info">
+                        <h3>Nicolai Ruetz</h3>
+                        <p class="team__role">Konzept &amp; Konzeptentwicklung</p>
+                        <div class="team__contacts">
+                            <a href="mailto:nicolairuetz@gmail.com" class="team__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7 L12 14 L22 7" stroke="currentColor" stroke-width="1.5"/></svg>
+                                nicolairuetz@gmail.com
+                            </a>
+                            <a href="https://instagram.com/nicolai_ruetz" class="team__link" target="_blank" rel="noopener noreferrer">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                                @nicolai_ruetz
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team__school reveal">
+                <div class="team__school-line"></div>
+                <div class="team__school-info">
+                    <span>Diplomarbeit 2026</span>
+                    <span class="sep" aria-hidden="true">—</span>
+                    <span>HTBLuVA Imst</span>
+                    <span class="sep" aria-hidden="true">—</span>
+                    <span>Betreuer: DI Ewerz Dietmar &amp; DI Martin Gamper</span>
+                </div>
+                <div class="team__school-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <svg width="28" height="33" viewBox="0 0 34 40" fill="none" aria-hidden="true">
+                        <rect x="1" y="1" width="32" height="38" stroke="#C8A800" stroke-width="1.5"/>
+                        <line x1="9"  y1="8"  x2="9"  y2="32" stroke="#C8A800" stroke-width="2.5"/>
+                        <line x1="9"  y1="8"  x2="27" y2="8"  stroke="#C8A800" stroke-width="2.5"/>
+                        <line x1="9"  y1="20" x2="21" y2="20" stroke="#C8A800" stroke-width="2.5"/>
+                    </svg>
+                    <div>
+                        <div class="footer__title">FLEXCITY</div>
+                        <div class="footer__subtitle">Flexibles Wohnsystem</div>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer Navigation">
+                    <a href="#konzept">Konzept</a>
+                    <a href="#module">Module</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#innenraum">Innenraum</a>
+                    <a href="#materialien">Materialien</a>
+                    <a href="#team">Team</a>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 FlexCity &ensp;—&ensp; Diplomarbeit von Jakob Nigsch &amp; Nicolai Ruetz &ensp;—&ensp; HTBLuVA Imst</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+         LIGHTBOX
+    ═══════════════════════════════════════ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Schließen">&#215;</button>
+        <img id="lightboxImg" src="" alt="" class="lightbox__img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
