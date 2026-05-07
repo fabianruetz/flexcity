@@ -202,6 +202,10 @@ ul { list-style: none; }
     filter: invert(1) hue-rotate(180deg);
 }
 
+.logo-img--footer {
+    height: 33px;
+}
+
 .nav__logo-text {
     font-family: var(--serif);
     font-size: 1.15rem;
