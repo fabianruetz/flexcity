@@ -195,6 +195,13 @@ ul { list-style: none; }
     flex-shrink: 0;
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+    filter: invert(1) hue-rotate(180deg);
+}
+
 .nav__logo-text {
     font-family: var(--serif);
     font-size: 1.15rem;
