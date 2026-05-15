@@ -12,5 +12,8 @@
   "type": "commonjs",
   "dependencies": {
     "pdf-image": "^2.0.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
